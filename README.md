@@ -19,4 +19,5 @@ Pasos a seguir:
   - Por mqtt: mosquitto_pub -q 1 -d -t "/esp-sysname/gpio/2:command:ON:1"
   - Integración en Openhab: Switch MQTTLEDPULSE { mqtt=">[mosquitto:/openhabdemo/cmd:command:ON:pulse,2,0,500], >[mosquitto:/openhabdemo/cmd:command:OFF:pulse,2,0,500]" }
   - Por URL: http://192.168.1.23/control?cmd=PWM,5,50  donde 5 es el GPIO y 50 es el pulso.
+  - !OJO¡ No confundas el GPIO con el pin
   
