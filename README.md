@@ -14,5 +14,5 @@ Componentes necesarios:
 - Si todo ha ido bien ya tienes el esp8266 conectado a la red wifi, a traves del navegador accede a la ip de la placa y puedes manejar los GPIO´s de la siguientes formas:
   - Por mqtt: mosquitto_pub -q 1 -d -t "/esp-sysname/gpio/2:command:ON:1"
   - Integración en Openhab: Switch MQTTLEDPULSE { mqtt=">[mosquitto:/openhabdemo/cmd:command:ON:pulse,2,0,500], >[mosquitto:/openhabdemo/cmd:command:OFF:pulse,2,0,500]" }
-  - Por URL: http://192.168.1.23/control?cmd=PWM,<pin>,<level> 
+  - Por URL: http://192.168.1.23/control?cmd=PWM,5,50  donde 5 es el GPIO y 50 es el pulso.
   
