@@ -5,7 +5,7 @@ Como utilizar un facilmente un relé de estado solido mediante esp8266 y pwm.
 11-11-2018
 
 Componentes necesarios:
-- Relé estado sólido, los hay de diversos tipos y amperajes, [ puede ser uno como éste.](https://es.aliexpress.com/item/solid-state-relay-SSR-40DA-H-40A-3-32V-DC-TO-90-480V-AC-SSR-40DA/1843393093.html)
+- [x] Relé estado sólido, los hay de diversos tipos y amperajes, [ puede ser uno como éste.](https://es.aliexpress.com/item/solid-state-relay-SSR-40DA-H-40A-3-32V-DC-TO-90-480V-AC-SSR-40DA/1843393093.html)
 - Una placa con el dispositivo esp8266, bien puede ser un Lolin, un Wemos, un Nodemcu, etc, en este caso [la que tengo es un wemos mini.](https://es.aliexpress.com/store/product/D1-mini-Mini-NodeMcu-4M-bytes-Lua-WIFI-Internet-of-Things-development-board-based-ESP8266-by/1084082_32651747570.html)
 - Descargar la última versión de EspEasy, a día de hoy es la versión ESPEasy_R120 y la tienes [disponible aquí](http://www.letscontrolit.com/downloads/ESPEasy_R120.zip)
 - Si no tienes habilidades informáticas o simplemente no tienes tiempo, voy a indicar unos sencillos pasos a seguir para subir el binario compilado  la placa esp8266. Una vez descargado el archivo, descomprimes y accede a la carpeta, en esa carpeta veras subcarpetas y archivos ejecutables, accede a la subcarpeta (bin) y dependiendo de tu placa ESP tendrás que elegir el binario adecuado, mi placa es de 4Mb así que elijo la versión "ESP_Easy_normal_ESP8266_4096.bin", copia el archivo y vuelve al directorio anterior donde lo pegas, ahora ejecuta el archivo "FlashESP8266.exe", conecta la placa al ordenador mediante el cable adecuado y una vez que detecte el puerto de comunicaciones, selecciona el binario a introducir en la placa y dale al botón para subirlo a la placa.
